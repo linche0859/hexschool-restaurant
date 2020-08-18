@@ -28,6 +28,12 @@ export function layoutHTML() {
         return file.frontMatter;
       })
     )
+    .pipe(
+      $.if(
+        options.env === 'production',
+        $.htmlmin({ collapseWhitespace: true, removeComments: true })
+      )
+    )
     .pipe(gulp.dest(envOptions.html.path))
     .pipe(browserSync.stream());
 }
