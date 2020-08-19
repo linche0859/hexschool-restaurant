@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout.js"],"names":[],"mappings":";;AAAA,CAAC,YAAY,CACX;AACD,CAFD","file":"all.js","sourcesContent":["(function () {\r\n  // const navbarContent = document.getElementById('navbarSupportedContent');\r\n})();\r\n"]}
