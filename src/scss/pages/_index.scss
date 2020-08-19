@@ -1,0 +1,134 @@
+.index {
+  &__title {
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: $font-size-lg;
+    line-height: 1.6;
+    text-align: center;
+    &--large {
+      font-size: 1.5rem;
+      line-height: $line-height-sm;
+    }
+  }
+  // 關於我們
+  &__about {
+    padding: 50px 0 25px;
+    background-color: $secondary;
+    color: $primary;
+    @include media-breakpoint-up(md) {
+      .index__title {
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          height: 1px;
+          background-color: #979797;
+        }
+        &:before {
+          right: calc(100% + 13px);
+          width: 109px;
+        }
+        &:after {
+          left: calc(100% + 12px);
+          width: 127px;
+        }
+      }
+    }
+    .card {
+      align-items: center;
+    }
+    .card-body {
+      margin-bottom: 10px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
+    }
+    .card-img-top {
+      margin-bottom: 5px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .card-title {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  // 今日主廚
+  &__chef {
+    background-color: $primary;
+    color: #efe9e7;
+    &__img {
+      margin-left: -15px;
+      margin-right: -15px;
+      background: url('../assets/images/main_chef_brown@2x.png') center / cover;
+      height: 460px;
+      @include media-breakpoint-up(md) {
+        margin: 0;
+      }
+    }
+    &__body {
+      padding: 30px 15px;
+      @include media-breakpoint-up(md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        height: 100%;
+      }
+    }
+    &__title {
+      margin-bottom: 0;
+      font-size: $font-size-base;
+      line-height: $line-height-sm;
+      font-weight: 400;
+    }
+  }
+  // 感想
+  &__experience {
+    background-color: $secondary;
+    color: $primary;
+    padding: 50px 0;
+    &__img {
+      margin-right: 13px;
+      border-radius: 50%;
+    }
+    &__title {
+      margin-bottom: 0;
+      font-size: 18px;
+      line-height: $line-height-sm;
+    }
+    &__body {
+      margin-left: 80px;
+    }
+  }
+
+  // 聯絡
+  &__contact {
+    padding: 50px 0;
+    background-color: #fafafa;
+    color: $primary;
+    font-size: $font-size-sm;
+    &__img {
+      background: url(../assets/images/Map.png) center / cover;
+      height: 386px;
+      object-fit: cover;
+    }
+    &__btnGroup {
+      text-align: right;
+      .btn {
+        padding-left: 21px;
+        padding-right: 21px;
+        font-size: $font-size-sm;
+        & + .btn {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}

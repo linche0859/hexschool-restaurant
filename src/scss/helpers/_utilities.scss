@@ -1,0 +1,43 @@
+// Utilities
+
+$utilities: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+
+$utilities: map-merge(
+  (
+    'font-size': (
+      property: font-size,
+      class: fz,
+      values: (
+        sm: $font-size-sm,
+        base: $font-size-base,
+        lg: $font-size-lg
+      )
+    ),
+    'line-height': (
+      property: line-height,
+      class: lh,
+      values: (
+        1: 1,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        lg: $line-height-lg
+      )
+    ),
+    'border-bottom': (
+      responsive: true,
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0
+      )
+    ),
+    'white-space': (
+      property: white-space,
+      values: (
+        nowrap: nowrap
+      )
+    )
+  ),
+  $utilities
+);

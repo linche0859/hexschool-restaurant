@@ -1,0 +1,11 @@
+// 全局設定
+
+.navbar-toggler {
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}

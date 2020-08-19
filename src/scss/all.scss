@@ -1,9 +1,20 @@
 // vendors utils
 @import 'functions';
 @import 'helpers/variables';
-@import 'mixins';
 
 // vendors
 @import 'material-icons.scss';
-@import 'reboot';
-@import 'buttons';
+@import 'fontawesome';
+@import 'bootstrap';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+@import 'pages/index';
+
+// utils
+@import 'helpers/utilities';
+@import 'utilities/api';
+@import 'helpers/base';

@@ -67,31 +67,29 @@ export function vendorsJs() {
 }
 
 export function scripts() {
-  return (
-    gulp
-      .src(envOptions.javascript.src, { sourcemaps: true })
-      .pipe($.plumber())
-      .pipe($.sourcemaps.init())
-      .pipe(
-        $.babel({
-          presets: ['@babel/env']
+  return gulp
+    .src(envOptions.javascript.src, { sourcemaps: true })
+    .pipe($.plumber())
+    .pipe($.sourcemaps.init())
+    .pipe(
+      $.babel({
+        presets: ['@babel/env']
+      })
+    )
+    .pipe(
+      $.if(
+        options.env === 'production',
+        $.uglify({
+          compress: {
+            drop_console: true
+          }
         })
       )
-      .pipe(
-        $.if(
-          options.env === 'production',
-          $.uglify({
-            compress: {
-              drop_console: true
-            }
-          })
-        )
-      )
-      // .pipe($.concat('all.js'))
-      .pipe($.sourcemaps.write('./'))
-      .pipe(gulp.dest(envOptions.javascript.path))
-      .pipe(browserSync.stream())
-  );
+    )
+    .pipe($.concat('all.js'))
+    .pipe($.sourcemaps.write('./'))
+    .pipe(gulp.dest(envOptions.javascript.path))
+    .pipe(browserSync.stream());
 }
 
 export function images() {

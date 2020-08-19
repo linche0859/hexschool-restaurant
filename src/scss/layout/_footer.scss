@@ -1,0 +1,33 @@
+.footer {
+  padding: 50px 0;
+  background-color: $secondary;
+  color: $primary;
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  &__text {
+    margin-bottom: 0;
+    line-height: $line-height-sm;
+  }
+  &__linkGroup {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    font-size: 36px;
+  }
+  &__link {
+    &--google {
+      color: #db4437;
+    }
+    &--twitter {
+      color: #41abe1;
+    }
+    &--facebook {
+      color: #3a5795;
+    }
+    & + .footer__link {
+      margin-left: 12px;
+    }
+  }
+}

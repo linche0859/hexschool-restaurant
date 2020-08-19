@@ -19,7 +19,8 @@ const envOptions = {
     outputStyle: 'expanded',
     includePaths: [
       `${nodePath}/bootstrap/scss`,
-      `${nodePath}/material-icons/iconfont`
+      `${nodePath}/material-icons/iconfont`,
+      `${nodePath}/@fortawesome/fontawesome-free/scss`
     ],
     path: `${distPath}/style`
   },
@@ -31,7 +32,8 @@ const envOptions = {
   vendors: {
     src: [
       `${nodePath}/jquery/dist/**/jquery.slim.min.js`,
-      `${nodePath}/bootstrap/dist/js/**/bootstrap.bundle.min.js` // 已包含 popper.js
+      `${nodePath}/bootstrap/dist/js/**/bootstrap.bundle.min.js`, // 已包含 popper.js
+      `${nodePath}/@fortawesome/fontawesome-free/js/all.min.js`
     ],
     concat: 'vendors.js',
     path: `${distPath}/js`
