@@ -31,12 +31,6 @@ $utilities: map-merge(
         null: $border-width solid $border-color,
         0: 0
       )
-    ),
-    'white-space': (
-      property: white-space,
-      values: (
-        nowrap: nowrap
-      )
     )
   ),
   $utilities

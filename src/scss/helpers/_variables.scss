@@ -755,7 +755,7 @@ $nav-divider-margin-y: $spacer / 2 !default;
 $navbar-padding-y: $spacer; //$spacer / 2 !default;
 $navbar-padding-x: 15px; //$spacer !default;
 
-$navbar-nav-link-padding-x: 0.5rem !default;
+$navbar-nav-link-padding-x: 1rem; //0.5rem !default;
 
 $navbar-brand-font-size: $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
@@ -863,8 +863,8 @@ $jumbotron-bg: $gray-200 !default;
 
 $card-spacer-y: 0.75rem !default;
 $card-spacer-x: 15px; //1.25rem !default;
-$card-border-width: $border-width !default;
-$card-border-radius: $border-radius !default;
+$card-border-width: 0; //$border-width !default;
+$card-border-radius: 0; //$border-radius !default;
 $card-border-color: transparent; //rgba($black, 0.125) !default;
 $card-inner-border-radius: subtract(
   $card-border-radius,
@@ -873,8 +873,8 @@ $card-inner-border-radius: subtract(
 $card-cap-bg: rgba($black, 0.03) !default;
 $card-cap-color: null !default;
 $card-height: null !default;
-$card-color: null !default;
-$card-bg: $white !default;
+$card-color: $primary; //null !default;
+$card-bg: transparent; //$white !default;
 
 $card-img-overlay-padding: 1.25rem !default;
 
@@ -1045,14 +1045,14 @@ $progress-bar-transition: width 0.6s ease !default;
 
 // List group
 
-$list-group-color: null !default;
-$list-group-bg: $white !default;
-$list-group-border-color: rgba($black, 0.125) !default;
+$list-group-color: $primary; //null !default;
+$list-group-bg: transparent; //$white !default;
+$list-group-border-color: $primary; //rgba($black, 0.125) !default;
 $list-group-border-width: $border-width !default;
 $list-group-border-radius: $border-radius !default;
 
-$list-group-item-padding-y: 0.75rem !default;
-$list-group-item-padding-x: 1.25rem !default;
+$list-group-item-padding-y: 4px; //0.75rem !default;
+$list-group-item-padding-x: 8px; //1.25rem !default;
 
 $list-group-hover-bg: $gray-100 !default;
 $list-group-active-color: $component-active-color !default;
@@ -1086,13 +1086,13 @@ $figure-caption-color: $gray-600 !default;
 
 $breadcrumb-font-size: null !default;
 
-$breadcrumb-padding-y: 0.75rem !default;
-$breadcrumb-padding-x: 1rem !default;
-$breadcrumb-item-padding: 0.5rem !default;
+$breadcrumb-padding-y: 0; //0.75rem !default;
+$breadcrumb-padding-x: 0; //1rem !default;
+$breadcrumb-item-padding: 1rem; //0.5rem !default;
 
-$breadcrumb-margin-bottom: 1rem !default;
+$breadcrumb-margin-bottom: 2rem; //1rem !default;
 
-$breadcrumb-bg: $gray-200 !default;
+$breadcrumb-bg: transparent; //$gray-200 !default;
 $breadcrumb-divider-color: $gray-600 !default;
 $breadcrumb-active-color: $gray-600 !default;
 $breadcrumb-divider: quote('/') !default;

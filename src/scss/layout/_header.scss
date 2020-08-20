@@ -3,7 +3,9 @@
   align-items: center;
   margin-top: 60px;
   height: 360px;
-  background: url('../assets/images/header_mobile@2x.png') center / cover;
+  background-image: url('../assets/images/header_mobile@2x.png');
+  background-position: center;
+  background-size: cover;
   @include media-breakpoint-up(md) {
     background-image: url('../assets/images/header_desktop@2x.png');
   }

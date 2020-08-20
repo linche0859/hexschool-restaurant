@@ -1,0 +1,214 @@
+---
+title: 購物車
+layout: ./src/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="cart">
+  <div class="container">
+    <div class="row">
+      <!-- 類型清單 -->
+      <section class="col-12 col-md-4 mb-4">
+        <h2 class="cart__title mb-3">
+          <span class="material-icons cart--textLarge align-bottom">
+            eco
+          </span>
+          線上訂購美食
+        </h2>
+        <div class="list-group list-group-flush" id="list-tab" role="tablist">
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-all-list"
+            data-toggle="list"
+            href="#list-all"
+            role="tab"
+            aria-controls="home"
+            >全部 (23)</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-frenchFries-list"
+            data-toggle="list"
+            href="#list-frenchFries"
+            role="tab"
+            aria-controls="profile"
+            >只愛吃薯條 (18)</a
+          >
+          <a
+            class="list-group-item list-group-item-action"
+            id="list-fast-list"
+            data-toggle="list"
+            href="#list-fast"
+            role="tab"
+            aria-controls="messages"
+            >加熱就可食 (1)</a
+          >
+          <a
+            class="list-group-item list-group-item-action active"
+            id="list-hamburger-list"
+            data-toggle="list"
+            href="#list-hamburger"
+            role="tab"
+            aria-controls="settings"
+            >不敗漢堡系列 (4)</a
+          >
+        </div>
+      </section>
+      <!-- 購物車列表 -->
+      <section class="cart__list col-12 col-md-8">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="btn-group" role="group">
+              <input class="form-control" type="text" placeholder="" />
+              <button type="button" class="btn btn-primary">
+                <span class="material-icons align-bottom">
+                  search
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <nav aria-label="breadcrumb">
+              <ol
+                class="breadcrumb justify-content-end align-items-center mb-md-3"
+              >
+                <li class="breadcrumb-item">
+                  <a href="javascript:;">結帳去</a>
+                </li>
+                <li class="breadcrumb-item position-relative">
+                  <span class="material-icons cart--textLarge">
+                    shopping_cart
+                  </span>
+                  <span class="cart__count">1</span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img
+                src="assets/images/product_1@2x.png"
+                class="card-img-top"
+                alt="hamburger"
+              />
+              <div class="card-body">
+                <h5 class="card-title">經典漢堡套餐</h5>
+                <p class="card-text position-relative mb-5 cart--textSmall">
+                  Classic Hamburger Package
+                  <span class="cart--textBorderBottom"></span>
+                </p>
+                <p class="card-text fz-lg font-weight-bold font-italic">
+                  $120
+                </p>
+                <button class="cart__list__add btn btn-outline-accent">
+                  <span class="material-icons mr-2 fz-base">
+                    shopping_cart
+                  </span>
+                  加入購物車
+                </button>
+              </div>
+              <button class="cart__favorite btn">
+                <span class="material-icons">
+                  favorite_border
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img
+                src="assets/images/product_2@2x.png"
+                class="card-img-top"
+                alt="sausage"
+              />
+              <div class="card-body">
+                <h5 class="card-title">英俊香腸</h5>
+                <p class="card-text position-relative mb-5 cart--textSmall">
+                  Handsome Sausage
+                  <span class="cart--textBorderBottom"></span>
+                </p>
+                <p class="card-text fz-lg font-weight-bold font-italic">
+                  $1,024
+                </p>
+                <button class="cart__list__add btn btn-outline-accent">
+                  <span class="material-icons mr-2 fz-base">
+                    shopping_cart
+                  </span>
+                  加入購物車
+                </button>
+              </div>
+              <button class="cart__favorite btn">
+                <span class="material-icons">
+                  favorite_border
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-md-0">
+              <img
+                src="assets/images/product_3@2x.png"
+                class="card-img-top"
+                alt="hamburger"
+              />
+              <div class="card-body">
+                <h5 class="card-title">漢堡兄弟</h5>
+                <p class="card-text position-relative mb-5 cart--textSmall">
+                  Hamburg Brothers
+                  <span class="cart--textBorderBottom"></span>
+                </p>
+                <p class="card-text fz-lg font-weight-bold font-italic">
+                  $792
+                </p>
+                <button class="cart__list__add btn btn-outline-accent">
+                  <span class="material-icons mr-2 fz-base">
+                    shopping_cart
+                  </span>
+                  加入購物車
+                </button>
+              </div>
+              <button class="cart__favorite btn">
+                <span class="material-icons">
+                  favorite_border
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-0">
+              <img
+                src="assets/images/product_4@2x.png"
+                class="card-img-top"
+                alt="dragonBall"
+              />
+              <div class="card-body">
+                <h5 class="card-title">完美願望</h5>
+                <p class="card-text position-relative mb-5 cart--textSmall">
+                  Dragon Ball Package
+                  <span class="cart--textBorderBottom"></span>
+                </p>
+                <p class="card-text fz-lg font-weight-bold font-italic">
+                  $999,999
+                </p>
+                <button class="cart__list__add btn btn-outline-accent">
+                  <span class="material-icons mr-2 fz-base">
+                    shopping_cart
+                  </span>
+                  加入購物車
+                </button>
+              </div>
+              <button class="cart__favorite btn">
+                <span class="material-icons">
+                  favorite
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

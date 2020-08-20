@@ -1,0 +1,93 @@
+.cart {
+  padding-top: 48px;
+  background-color: $secondary;
+  color: $primary;
+  &__title {
+    font-size: $font-size-lg;
+    line-height: 1.6;
+  }
+  // 購物車數量
+  &__count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1;
+    background-color: $accent;
+    color: $white;
+    border-radius: 50%;
+  }
+  // 加入我的最愛
+  &__favorite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    color: $white;
+  }
+  // 購物車列表
+  &__list {
+    // 加入購物車
+    &__add {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 100%;
+    }
+  }
+  &--textLarge {
+    font-size: 2rem;
+  }
+  &--textSmall {
+    font-size: 12px;
+  }
+  &--textBorderBottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    margin: auto;
+    width: 90px;
+    height: 1px;
+    background-color: $primary;
+  }
+  .btn-group {
+    margin-bottom: 1rem;
+    width: 100%;
+    .form-control {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      height: 32px;
+      background-color: transparent;
+      border: 2px solid $primary;
+      border-radius: 0;
+    }
+    .btn {
+      padding: 3px 8px;
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '|';
+    color: $primary;
+    line-height: 1.7;
+  }
+  .card {
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.16);
+  }
+  .card-img-top {
+    margin-bottom: 10px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .card-title {
+    margin-bottom: 0;
+    font-size: $font-size-lg;
+    line-height: $line-height-sm;
+  }
+}
