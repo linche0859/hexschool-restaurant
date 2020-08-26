@@ -7,15 +7,20 @@
 @import 'fontawesome';
 @import 'bootstrap';
 
+// utils
+@import 'mixins/title';
+@import 'helpers/utilities';
+@import 'utilities/api';
+@import 'helpers/base';
+
+// components
+@import 'components/forms';
+
 // layout
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/authority';
 
 // pages
 @import 'pages/index';
 @import 'pages/cart';
-
-// utils
-@import 'helpers/utilities';
-@import 'utilities/api';
-@import 'helpers/base';

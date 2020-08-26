@@ -1,0 +1,46 @@
+---
+title: 登入
+layout: ./src/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="authority">
+  <section>
+    <h2 class="authority__title">六角西餐廳</h2>
+    <h3 class="authority__subtitle">享受美食好味道</h3>
+    <form action="javascript:;" class="customForm">
+      <fieldset>
+        <legend>LOGIN</legend>
+        <div class="form-group">
+          <label for="email">Email Address*</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+          <span class="customForm__placeholder">
+            <span class="material-icons">
+              mail_outline
+            </span>
+          </span>
+        </div>
+        <div class="form-group mb-5">
+          <label for="password">Password*</label>
+          <input type="password" class="form-control" id="password" />
+          <span class="customForm__placeholder">
+            <span class="material-icons">
+              lock
+            </span>
+          </span>
+          <small class="form-text">忘記密碼？</small>
+        </div>
+        <div class="d-flex justify-content-between">
+          <a href="register.html" class="btn btn-minor text-white">註冊</a>
+          <input type="submit" class="btn btn-accent" value="登入" />
+        </div>
+      </fieldset>
+    </form>
+  </section>
+</main>

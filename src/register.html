@@ -1,0 +1,67 @@
+---
+title: 註冊
+layout: ./src/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="authority">
+  <section>
+    <h2 class="authority__title">六角西餐廳</h2>
+    <h3 class="authority__subtitle">享受美食好味道</h3>
+    <form action="javascript:;" class="customForm customForm--widthLarge">
+      <fieldset>
+        <legend>REGISTER</legend>
+        <div class="customForm__body">
+          <p class="customForm__text">
+            就是這樣條款： <br />Mauris non tempor quam, et lacinia sapien.
+            Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit,
+            elementum sed varius at, adipiscing vitae est. Sed nec felis
+            pellentesque, lacinia dui sed, ultricies sapien...
+          </p>
+          <div class="flex-grow-1">
+            <div class="form-group">
+              <label for="email">Email Address*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+              <span class="customForm__placeholder">
+                <span class="material-icons">
+                  mail_outline
+                </span>
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="password">Password*</label>
+              <input type="password" class="form-control" id="password" />
+              <span class="customForm__placeholder">
+                <span class="material-icons">
+                  lock
+                </span>
+              </span>
+            </div>
+            <div class="form-group mb-5">
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+              />
+              <span class="customForm__placeholder noLabel">
+                <span class="material-icons">
+                  lock
+                </span>
+              </span>
+              <small class="form-text">已經有帳號了？</small>
+            </div>
+            <div class="text-right">
+              <input type="submit" class="btn btn-accent" value="註冊" />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+</main>

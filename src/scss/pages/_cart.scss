@@ -3,8 +3,7 @@
   background-color: $secondary;
   color: $primary;
   &__title {
-    font-size: $font-size-lg;
-    line-height: 1.6;
+    @include title();
   }
   // 購物車數量
   &__count {

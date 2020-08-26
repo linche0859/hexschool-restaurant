@@ -1,0 +1,22 @@
+// 權限操作版面
+
+.authority {
+  padding-top: 50px;
+  padding-bottom: 4px;
+  background-color: $secondary;
+  color: $primary;
+  &__title {
+    margin-bottom: 4px;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: bolder;
+  }
+  &__subtitle {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+}

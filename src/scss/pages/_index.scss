@@ -1,15 +1,17 @@
 .index {
   &__title {
-    position: relative;
-    margin-bottom: 2rem;
-    font-size: $font-size-lg;
-    line-height: 1.6;
-    text-align: center;
+    @include title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
     &--large {
-      font-size: 1.5rem;
-      line-height: $line-height-sm;
+      @include title(1.5rem, $line-height-sm) {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
     }
   }
+
   // 關於我們
   &__about {
     padding: 50px 0 25px;
@@ -83,7 +85,7 @@
       }
     }
     &__title {
-      margin-bottom: 0;
+      margin-bottom: 1rem;
       font-size: $font-size-base;
       line-height: $line-height-sm;
       font-weight: 400;
@@ -119,15 +121,11 @@
       height: 386px;
       object-fit: cover;
     }
-    &__btnGroup {
-      text-align: right;
-      .btn {
-        padding-left: 21px;
-        padding-right: 21px;
-        font-size: $font-size-sm;
-        & + .btn {
-          margin-left: 12px;
-        }
+    .btn {
+      width: 70px;
+      font-size: $font-size-sm;
+      & + .btn {
+        margin-left: 12px;
       }
     }
   }
