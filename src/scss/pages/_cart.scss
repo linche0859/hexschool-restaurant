@@ -18,6 +18,39 @@
     color: $white;
     border-radius: 50%;
   }
+  // 熱銷美食標籤
+  &__popular {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 160px;
+    height: 90px;
+    overflow: hidden;
+    &__text {
+      padding: 2px 50px;
+      font-size: $font-size-sm;
+      font-weight: bold;
+      background-color: $popular;
+      color: $white;
+      transform: rotate(45deg) translate(50px, -20px);
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      border: 5px solid;
+    }
+    &::before {
+      top: -5px;
+      right: 77px;
+      border-color: transparent transparent #00856f transparent;
+    }
+    &::after {
+      top: 77px;
+      right: -5px;
+      border-color: transparent transparent transparent #00856f;
+    }
+  }
   // 加入我的最愛
   &__favorite {
     position: absolute;
@@ -26,17 +59,14 @@
     padding: 8px;
     color: $white;
   }
-  // 購物車列表
-  &__list {
-    // 加入購物車
-    &__add {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      width: 100%;
-    }
+  // 加入購物車
+  &__addCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100%;
   }
   &--textLarge {
     font-size: 2rem;
